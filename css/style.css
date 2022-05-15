@@ -529,6 +529,11 @@ a {
   letter-spacing: 0.03em;
   color: var(--secondary-colour);
 }
+.employees__set {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 .employees-list {
   display: flex;
   margin: 0;
