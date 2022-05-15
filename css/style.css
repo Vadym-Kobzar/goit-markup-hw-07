@@ -206,7 +206,7 @@ a {
   color: rgba(33, 150, 243, 1);
   text-decoration: underline;
 }
-.modal-btn {
+.modal__btn {
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -222,11 +222,11 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover {
+.modal__btn:hover {
   background-color: #188ce8;
 }
 
-.backdrop-btn {
+.backdrop__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -240,10 +240,10 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop-btn:hover {
+.backdrop__btn:hover {
   fill: #2196f3;
 }
-.backdrop-btnposition {
+.backdrop__btnposition {
   position: absolute;
   top: 0;
   left: 0;
@@ -414,17 +414,21 @@ a {
   padding-bottom: 47px;
 }
 
-.benefits-list {
+.benefits__list {
   width: 1170px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.benefits-item {
+.benefits__item {
   display: block;
   width: 270px;
   height: 251px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .benefits-logo {
@@ -432,14 +436,10 @@ a {
   align-content: center;
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.benefit-logo:not(:last-child) {
+.benefit__logo:not(:last-child) {
   margin-bottom: 30px;
 }
-.benefits-logo {
+.benefits__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -449,7 +449,7 @@ a {
   border-radius: 4px;
 }
 
-.benefits-header {
+.benefits__header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -520,7 +520,7 @@ a {
 .employees {
   background: #f5f4fa;
 }
-.employees-header {
+.employees__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -534,9 +534,11 @@ a {
   margin: 0;
   padding: 0;
 }
+/*
 .employees .employees__list {
   margin-top: 50px;
 }
+*/
 .employees-card__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -563,7 +565,7 @@ a {
   padding: 30px 15px;
 }
 
-.employees-name {
+.employees__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
