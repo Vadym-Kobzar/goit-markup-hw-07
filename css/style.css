@@ -1,3 +1,4 @@
+
 :root {
   --whiteColour: #ffffff;
   --basic-colour: #000000;
@@ -6,8 +7,7 @@
   --accentColour: #2196f3;
   --background-element: #f5f4fa;
 }
-
-/*--------------BODY--------------*/
+/*------------------ZEROING-----------------*/
 h1,
 h2,
 h3,
@@ -18,7 +18,7 @@ p {
 img {
   display: block;
 }
-
+/*--------------BODY--------------*/
 body {
   background-color: var(--whiteColour);
   color: var(--basic-colour);
@@ -65,7 +65,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*/////////////////BACDROP///////////*/
+/*---------------BACDROP--------------------*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -84,7 +84,7 @@ a {
   pointer-events: none;
   transform: scale(0);
 }
-
+/*-------------------MODAL-------------------*/
 .modal {
   position: absolute;
   padding: 40px;
@@ -918,3 +918,4 @@ a {
   letter-spacing: 0.03em;
   color: var(--tertiary-colour);
 }
+*/
