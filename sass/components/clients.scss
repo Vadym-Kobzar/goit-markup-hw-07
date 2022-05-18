@@ -21,24 +21,21 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accentColour);
+  }
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 .clients-container-svg {
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-container:hover .clients-container-svg,
-.clients-container:focus .clients-container-svg {
-  fill: var(--accentColour);
-}
-
-.clients-container:hover,
-.clients-container:focus {
-  border: 1px solid var(--accentColour);
-}
-
-.clients-container:not(:first-child) {
-  margin-left: 30px;
+  .clients-container:hover &,
+  .clients-container:focus & {
+    fill: var(--accentColour);
+  }
 }

@@ -1,21 +1,21 @@
 .sample {
   padding-top: 47px;
-}
 
-.sample__header {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--secondary-colour);
-}
+  &__header {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondary-colour);
+  }
 
-.sample__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .sample__item:not(:last-child) {

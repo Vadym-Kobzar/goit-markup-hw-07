@@ -36,6 +36,14 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-container:hover, .clients-container:focus {
+  border: 1px solid var(--accentColour);
+}
+
+.clients-container:not(:first-child) {
+  margin-left: 30px;
+}
+
 .clients-container-svg {
   fill: #afb1b8;
   -webkit-transition-property: fill;
@@ -49,14 +57,5 @@
 .clients-container:hover .clients-container-svg,
 .clients-container:focus .clients-container-svg {
   fill: var(--accentColour);
-}
-
-.clients-container:hover,
-.clients-container:focus {
-  border: 1px solid var(--accentColour);
-}
-
-.clients-container:not(:first-child) {
-  margin-left: 30px;
 }
 /*# sourceMappingURL=clients.css.map */
