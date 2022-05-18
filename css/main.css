@@ -502,7 +502,7 @@ a {
   height: 251px;
 }
 
-.benefits__item:not(:last-child) {
+.benefits__item__item:not(:last-child) {
   margin-right: 30px;
 }
 

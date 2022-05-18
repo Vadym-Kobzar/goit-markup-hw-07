@@ -6,13 +6,12 @@
   display: block;
   width: 270px;
   height: 251px;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.benefits__logo {
+&__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +22,7 @@
   border-radius: 4px;
 }
 
-.benefits__header {
+&__header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -31,7 +30,7 @@
   color: var(--secondary-colour);
   margin-bottom: 10px;
 }
-.benefits__mean {
+&__mean {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
