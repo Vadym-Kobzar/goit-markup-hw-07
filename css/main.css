@@ -794,6 +794,14 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-container:hover, .clients-container:focus {
+  border: 1px solid var(--accentColour);
+}
+
+.clients-container:not(:first-child) {
+  margin-left: 30px;
+}
+
 .clients-container-svg {
   fill: #afb1b8;
   -webkit-transition-property: fill;
@@ -807,15 +815,6 @@ a {
 .clients-container:hover .clients-container-svg,
 .clients-container:focus .clients-container-svg {
   fill: var(--accentColour);
-}
-
-.clients-container:hover,
-.clients-container:focus {
-  border: 1px solid var(--accentColour);
-}
-
-.clients-container:not(:first-child) {
-  margin-left: 30px;
 }
 
 .footer {
@@ -1020,8 +1019,7 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-nav__btn:hover,
-.portfolio-nav__btn:focus {
+.portfolio-nav__btn:hover, .portfolio-nav__btn:focus {
   background-color: var(--accentColour);
   color: var(--whiteColour);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1062,11 +1060,6 @@ a {
   margin-right: 30px;
 }
 
-.portfolio-card__item:hover .card--overlay {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
 .portfolio-card__thumb {
   position: relative;
   overflow: hidden;
@@ -1075,6 +1068,27 @@ a {
 .portfolio-card__about {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-card_title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-card_text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--tertiary-colour);
+}
+
+.overlay--text {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .card--overlay {
@@ -1097,24 +1111,8 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay--text {
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.portfolio-card_title {
-  margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.portfolio-card_text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--tertiary-colour);
+.portfolio-card__item:hover .card--overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 /*# sourceMappingURL=main.css.map */
