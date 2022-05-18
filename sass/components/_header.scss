@@ -39,6 +39,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__link:hover,
+  &__link:focus {
+    color: var(--accentColour);
+  }
 }
 
 .current {
@@ -80,15 +84,19 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accentColour);
+  }
 }
 .address__svg {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.header-nav__link:hover,
+/*.header-nav__link:hover,
 .header-nav__link:focus,
 .address__contact:hover,
 .address__contact:focus {
   color: var(--accentColour);
-}
+}*/
