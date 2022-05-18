@@ -149,14 +149,6 @@ a {
   outline: transparent;
 }
 
-.modal__input:focus + .modal__icon {
-  fill: var(--accentColour);
-}
-
-.modal__input:focus {
-  border: 1px solid #2196f3;
-}
-
 .modal__icon {
   position: absolute;
   left: 12px;
@@ -173,10 +165,6 @@ a {
   border-radius: 4px;
   resize: none;
   outline: transparent;
-}
-
-.modal__areatext:focus {
-  border-color: var(--accentColour);
 }
 
 .modal__areatext::-webkit-input-placeholder {
@@ -207,43 +195,8 @@ a {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.modal-checkbox:checked + .checkbox__vector {
-  background-color: #188ce8;
-  background-image: url(../images/icons.svg/Vectora.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  fill: #188ce8;
-}
-
-.checkbox__vector {
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-}
-
-.modal-checkbox__link {
-  margin-left: 4px;
-  color: #2196f3;
-  text-decoration: underline;
+.modal__areatext:focus {
+  border-color: var(--accentColour);
 }
 
 .modal__btn {
@@ -269,6 +222,53 @@ a {
 
 .modal__btn:hover {
   background-color: #188ce8;
+}
+
+.modal__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.modal__input:focus + .modal__icon {
+  fill: var(--accentColour);
+}
+
+.modal__input:focus {
+  border: 1px solid #2196f3;
+}
+
+.modal-checkbox:checked + .checkbox__vector {
+  background-color: #188ce8;
+  background-image: url(../images/icons.svg/Vectora.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  fill: #188ce8;
+}
+
+.checkbox__vector {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+}
+
+.modal-checkbox__link {
+  margin-left: 4px;
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .backdrop__btn {
@@ -494,8 +494,7 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background-color: #188ce8;
 }
 
