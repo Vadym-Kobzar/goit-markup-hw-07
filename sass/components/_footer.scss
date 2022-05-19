@@ -1,14 +1,13 @@
 .footer {
   padding: 60px 0px;
-  height: 252px;
+
   background: #2f303a;
 }
-
 .info {
   display: flex;
 }
 .footer-info {
-  margin-right: 93px;
+  margin-right: 70px;
 }
 
 .footer--logo {
@@ -19,11 +18,6 @@
   font-style: normal;
   margin-top: 20px;
 }
-
-.footer-link {
-  margin-top: 9px;
-}
-
 .footer-contact {
   font-style: normal;
   font-weight: 400;
@@ -41,6 +35,10 @@
   }
 }
 
+.footer-link {
+  margin-top: 9px;
+}
+
 .footer-paragraph {
   font-weight: 700;
   font-size: 14px;
@@ -49,17 +47,22 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+.cover {
+  display: flex;
+}
 
 .footer-social {
-  margin-left: 70px;
   width: 206px;
 
-  &__list {
-    display: inline-block;
+  .footer-sosial__list {
+    display: flex;
     margin-top: 20px;
   }
 
   &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -71,15 +74,17 @@
     &:focus {
       background-color: var(--accentColour);
     }
+    &:nth-child(n + 1) {
+      margin-right: 10px;
+    }
+    &:last-child() {
+      margin-right: 0;
+    }
   }
-}
 
-&:nth-last-child(1) {
-  margin-right: 10px;
-}
-
-.footer-social__icon {
-  fill: #fff;
+  &__icon {
+    fill: #fff;
+  }
 }
 
 .footer-subscription {
@@ -90,7 +95,6 @@
   align-items: center;
   margin-top: 20px;
 }
-
 .footer-placeholder {
   padding-left: 16px;
   height: 50px;
