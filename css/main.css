@@ -888,8 +888,8 @@ a {
   margin-top: 20px;
 }
 
-.footer-social__icon {
-  fill: #fff;
+.footer-social .footer-social__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social__link {
@@ -918,12 +918,8 @@ a {
   background-color: var(--accentColour);
 }
 
-.footer-social__link:not(:nth-child(0)) {
-  margin-right: 10px;
-}
-
-.footer-social__link:last-child() {
-  margin-right: 0;
+.footer-social__icon {
+  fill: #fff;
 }
 
 .footer-subscription {
