@@ -1,7 +1,8 @@
 .section--hero {
   display: flex;
+  padding: 200px 0;
   max-width: 1600px;
-  height: 600px;
+
   text-align: center;
   margin: auto;
   background-image: linear-gradient(
@@ -12,10 +13,6 @@
     url(../images/photo.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.container--hero {
-  padding-top: 108px;
 }
 
 .hero__title {
