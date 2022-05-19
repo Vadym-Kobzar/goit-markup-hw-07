@@ -922,7 +922,7 @@ a {
   background-color: var(--accentColour);
 }
 
-.footer-social__link:nth-child(n + 1) {
+.footer-social__link:not(:nth-child(0)) {
   margin-right: 10px;
 }
 

@@ -74,7 +74,7 @@
     &:focus {
       background-color: var(--accentColour);
     }
-    &:nth-child(n + 1) {
+    &:not(:nth-child(0)) {
       margin-right: 10px;
     }
     &:last-child() {
