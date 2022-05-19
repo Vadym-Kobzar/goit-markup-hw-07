@@ -1,11 +1,14 @@
 .benefits {
   padding-bottom: 47px;
+  &__list {
+    display: flex;
+  }
 
   &__item {
     display: block;
     width: 270px;
     height: 251px;
-    &__item:not(:last-child) {
+    &:not(:last-child) {
       margin-right: 30px;
     }
   }
@@ -16,6 +19,7 @@
     justify-content: center;
     margin-bottom: 30px;
     width: 270px;
+    height: 120px;
 
     background-color: #f5f4fa;
     border-radius: 4px;

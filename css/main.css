@@ -365,7 +365,7 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav__link__link:hover, .header-nav__link__link:focus {
+.header-nav__link:hover, .header-nav__link:focus {
   color: var(--accentColour);
 }
 
@@ -502,13 +502,19 @@ a {
   padding-bottom: 47px;
 }
 
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .benefits__item {
   display: block;
   width: 270px;
   height: 251px;
 }
 
-.benefits__item__item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -524,6 +530,7 @@ a {
           justify-content: center;
   margin-bottom: 30px;
   width: 270px;
+  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -827,9 +834,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .footer--logo {
@@ -874,15 +878,8 @@ a {
   color: #ffffff;
 }
 
-.footer-social {
-  width: 206px;
-  height: 80px;
-}
-
 .footer-social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   margin-top: 20px;
 }
 
@@ -908,11 +905,11 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social__link__link:hover, .footer-social__link__link:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--accentColour);
 }
 
-.footer-social .footer-social__link:nth-last-child(1) {
+.footer-social:nth-last-child(1) {
   margin-right: 10px;
 }
 
@@ -921,18 +918,20 @@ a {
 }
 
 .footer-subscription {
+  margin-left: auto;
+}
+
+.form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 86px;
-  width: 570px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
 }
 
 .footer-placeholder {
-  margin-top: 20px;
   padding-left: 16px;
   height: 50px;
   width: 358px;
@@ -976,11 +975,6 @@ a {
 .footer-email__icon {
   margin-left: 10px;
   fill: #fff;
-}
-
-.container--portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .portfolio-nav__list {

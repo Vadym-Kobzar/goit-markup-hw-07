@@ -14,8 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <!--<link rel="stylesheet" href="./css/style.css" />-->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="section section--header">
@@ -633,7 +633,7 @@
         <div class="footer-social">
           <p class="footer-paragraph">присоединяйтесь</p>
           <ul class="footer-sosial__list">
-            <li>
+            <li class="footer-social__item">
               <a
                 class="footer-social__link"
                 href="https://instagram.com"
@@ -647,7 +647,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="footer-social__item">
               <a
                 class="footer-social__link"
                 href="https://twitter.com"
@@ -661,7 +661,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="footer-social__item">
               <a
                 class="footer-social__link"
                 href="https://facebook.com"
@@ -675,7 +675,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="footer-social__item">
               <a
                 class="footer-social__link"
                 href="https://linkedin.com"
@@ -691,8 +691,10 @@
           </ul>
         </div>
         <form class="footer-subscription">
-          <label for="user-email" class="footer-paragraph"
+          <b for="user-email" class="footer-paragraph"
             >Подпишитесь на рассылку
+          </b>
+          <div class="form-groop">
             <input
               class="footer-placeholder"
               type="email"
@@ -700,14 +702,13 @@
               id="user-email"
               placeholder="E-mail"
             />
-          </label>
-
-          <button class="footer-btn" type="button">
-            Подписаться
-            <svg class="footer-email__icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-send"></use>
-            </svg>
-          </button>
+            <button class="footer-btn" type="button">
+              Подписаться
+              <svg class="footer-email__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
