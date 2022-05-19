@@ -47,9 +47,6 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.cover {
-  display: flex;
-}
 
 .footer-social {
   width: 206px;
@@ -57,6 +54,9 @@
   .footer-sosial__list {
     display: flex;
     margin-top: 20px;
+  }
+  &__icon {
+    fill: #fff;
   }
 
   &__link {
@@ -80,10 +80,6 @@
     &:last-child() {
       margin-right: 0;
     }
-  }
-
-  &__icon {
-    fill: #fff;
   }
 }
 

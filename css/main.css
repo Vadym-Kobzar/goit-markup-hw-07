@@ -881,12 +881,6 @@ a {
   color: #ffffff;
 }
 
-.cover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer-social {
   width: 206px;
 }
@@ -896,6 +890,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+}
+
+.footer-social__icon {
+  fill: #fff;
 }
 
 .footer-social__link {
@@ -930,10 +928,6 @@ a {
 
 .footer-social__link:last-child() {
   margin-right: 0;
-}
-
-.footer-social__icon {
-  fill: #fff;
 }
 
 .footer-subscription {
